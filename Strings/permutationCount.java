@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class permutationCount {
     public static void main(String[] args) {
-        System.out.println(permutationCount("","abcde"));
+        System.out.println(permutationCount("","abcde"));   //returns no.of permutations for this string
     }
 
     static int permutationCount(String p, String up){
