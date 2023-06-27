@@ -1,6 +1,6 @@
 public class Main {
 	public static void main(String[] args) {
-		Animal animal=new Dog(); //UPCASTING
+		Animal animal=new Dog(); //UPCASTIN
 		animal.eat();
 		animal.run();
 	}
