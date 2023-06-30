@@ -15,7 +15,7 @@ public class findAllIndex {
             return list;
         }
         if(target==arr[index]){
-            list.add(index);
+            list.add(index);//adding index
         }
 
         return findAllIndex(arr,target,index+1,list);
