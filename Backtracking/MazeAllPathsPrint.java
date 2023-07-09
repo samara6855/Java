@@ -43,7 +43,7 @@ public class AllPathPrint {
             AllPathPrint(p+'L',maze,r,c-1,path,step+1);
         }
 
-        maze[r][c]=true;
+        maze[r][c]=true; //Backtracking
         path[r][c]=0;
     }
 }
