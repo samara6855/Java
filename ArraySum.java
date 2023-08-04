@@ -2,7 +2,6 @@ public class ArraySum{
 
 	public static void main(String[] args) {
 
-		// 2D array is collection of 1D Array
 
 		int[][] myFirst2DArray = {
 				{ 3, 5, 1, 9 },
