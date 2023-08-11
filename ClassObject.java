@@ -1,7 +1,7 @@
 public class Main {
 
 	public static void main(String[] args) {
-		Cake c = new Cake(); //reference variable
+		Cake c = new Cake(); // Reference variable
 		c.cakeName = "Black Forest";    
 		c.price = 55.0f;                
 		c.favCake();
