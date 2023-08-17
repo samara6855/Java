@@ -1,0 +1,56 @@
+package com.yssr.dsa;
+
+import java.util.Scanner;
+
+public class MiddleOfaLL
+{
+    static class Node {
+        int data;
+        Node next;
+
+        Node(int data) {
+            this.data = data;
+            this.next = null;
+        }
+    }
+
+    public static Node findMiddle(Node head) {
+        Node temp = head ;
+        int size = 0 ;
+        while(temp != null) {
+            temp = temp.next ;
+            size++;
+        }
+        int mid = size/2 ;
+        Node middle = head ;
+        for(int i = 0 ; i < mid ; i++) {
+            middle = middle.next ;
+        }
+        return middle ;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+
+        Node head = null, tail = null;
+        for(int i = 0; i < N; i++) {
+            int data = sc.nextInt();
+            Node node = new Node(data);
+            if(head == null) {
+                head = node;
+                tail = node;
+            } else {
+                tail.next = node;
+                tail = node;
+            }
+        }
+
+        Node middle = findMiddle(head);
+        while(middle != null) {
+            System.out.print(middle.data + " ");
+            middle = middle.next;
+        }
+    }
+}
+
