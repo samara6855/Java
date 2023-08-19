@@ -1,0 +1,80 @@
+package com.yssr.dsa;
+
+import java.util.*;
+
+public class waterSupplyInaVillage {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int k = sc.nextInt();
+
+        int[] wells = new int[n];
+        for(int i = 0; i < n; i++) {
+            wells[i] = sc.nextInt();
+        }
+
+        int[][] pipes = new int[k][3];
+        for(int i = 0; i < k; i++) {
+            pipes[i][0] = sc.nextInt();
+            pipes[i][1] = sc.nextInt();
+            pipes[i][2] = sc.nextInt();
+        }
+
+        System.out.println(supplyWater(n, k, wells, pipes));
+    }
+
+    static class Pair {
+        int node;
+        int weight;
+        Pair(int node, int weight) {
+            this.node = node;
+            this.weight = weight;
+        }
+    }
+    public static int supplyWater(int n, int k, int[] wells, int[][] pipes) {
+        // Create a graph of nodes and edges.
+        Map<Integer, List<Pair>> graph = new HashMap<>();
+        for (int i = 0; i <= n; i++) {
+            graph.put(i, new ArrayList<>());
+        }
+        for (int i = 0; i < k; i++) {
+            graph.get(pipes[i][0]).add(new Pair(pipes[i][1], pipes[i][2]));
+            graph.get(pipes[i][1]).add(new Pair(pipes[i][0], pipes[i][2]));
+        }
+        // Initialize the cost array and the visited array.
+        int[] cost = new int[n];
+        int[] visited = new int[n + 1];
+        for (int i = 0; i < n; i++) {
+            cost[i] = wells[i];
+        }
+        // Initialize the priority queue.
+        PriorityQueue<Pair> pq = new PriorityQueue<>((a, b) -> a.weight -
+                b.weight);
+        for (int i = 0; i < n; i++) {
+            pq.add(new Pair(i + 1, cost[i]));
+        }
+        // Iterate through the priority queue and update the cost array.
+        while (!pq.isEmpty()) {
+            Pair node = pq.poll();
+            int nodeId = node.node;
+            int nodeCost = node.weight;
+            visited[nodeId] = 1;
+            for (Pair neighbor : graph.get(nodeId)) {
+                if (cost[neighbor.node -
+                        1] > neighbor.weight && visited[neighbor.node] == 0) {
+                    cost[neighbor.node - 1] = neighbor.weight;
+                    pq.add(new Pair(neighbor.node, neighbor.weight));
+                }
+            }
+        }
+        // Return the sum of the cost array.
+        int sum = 0;
+        for (int i = 0; i < n; i++) {
+            sum += cost[i];
+        }
+        return sum;
+    }
+
+
+}
