@@ -14,7 +14,7 @@ public class ArraySum{
 		for (int row = 0; row < myFirst2DArray.length; row++) {
 
 			for (int column = 0; column < myFirst2DArray.length; column++) {
-				sum +=myFirst2DArray[row][column]; // Adding elements from array
+				sum +=myFirst2DArray[row][column]; //Adding elements from array
 			}
 
 			System.out.println(sum);
