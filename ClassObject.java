@@ -11,7 +11,7 @@ public class Main {
 		String cakeName; // instance variable
 		float price; // instance variable
 		String flavour; // instance variable
-		boolean isAvailable; // instance variable
+		boolean isAvailable; //instance variable
 
 		public String favCake() {
       int layers=4; // local variable
