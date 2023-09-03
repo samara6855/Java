@@ -11,7 +11,7 @@ public class Main {
 		names.add("E"); //4
 		System.out.println(names.get(1));
 		System.out.println(names.get(2));
-		//To print all elements, using "for each" loop
+		// To print all elements, using "for each" loop
 		for(String name: names){
 			System.out.println(name);
 		}
