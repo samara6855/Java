@@ -14,7 +14,7 @@ public class Main {
 		boolean isAvailable; // instance variable
 
 		public String favCake() {
-      			int layers=4; // local variable
+      			int layers=4; //local variable
 			System.out.println("My favourite cake is : " + cakeName + " with " + layers +" layers.");
 			return null;
 		}
