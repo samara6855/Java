@@ -15,8 +15,8 @@ public class Main {
 		for(String name: names){
 			System.out.println(name);
 		}
-		 //**********************************
-		 // Creating arrayList of Car
+		  //**********************************
+		  // Creating arrayList of Car
 		Car c1=new Car("Ferrari");
 		Car c2=new Car("Bugatti");
 		Car c3=new Car("Ford");
