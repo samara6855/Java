@@ -4,7 +4,7 @@ import java.util.List;
 public class Main {
 	public static void main(String[] args) {
 		List<String> names = new ArrayList();
-		names.add("A"); // index:0
+		names.add("A");  // index:0
 		names.add("B"); // 1
 		names.add("C"); // 2
 		names.add("D"); // 3
