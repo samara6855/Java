@@ -8,13 +8,13 @@ public class Main {
 	}
 
 	public static class Cake {
-		String cakeName; // instance variable
-		float price; // instance variable
-		String flavour; // instance variable
-		boolean isAvailable; // instance variable
+		String cakeName; //instance variable
+		float price; //instance variable
+		String flavour; //instance variable
+		boolean isAvailable; //instance variable
 
 		public String favCake() {
-      			int layers=4; // local variable
+      			int layers=4; //local variable
 			System.out.println("My favourite cake is : " + cakeName + " with " + layers +" layers.");
 			return null;
 		}
