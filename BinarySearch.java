@@ -16,7 +16,7 @@ public class BinarySRecursion {
             return m;
         }
         if(arr[m] < target){
-            return BinarySearch(arr,target,s,m-1); // Recursive call
+            return BinarySearch(arr,target,s,m-1); //Recursive call
         }
         return BinarySearch(arr,target,m+1,e);
     }
