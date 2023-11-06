@@ -4,11 +4,11 @@ import java.util.List;
 public class Main {
 	public static void main(String[] args) {
 		List<String> names = new ArrayList();
-		names.add("A"); // index:0
-		names.add("B"); // 1
-		names.add("C"); // 2
-		names.add("D"); // 3
-		names.add("E"); // 4
+		names.add("A");  // index:0
+		names.add("B");  // 1
+		names.add("C");  // 2
+		names.add("D");  // 3
+		names.add("E");  // 4
 		System.out.println(names.get(1));
 		System.out.println(names.get(2));
 		for(String name: names){
