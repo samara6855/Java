@@ -11,7 +11,7 @@ public class Main {
 		String name=namesMap.get(5);
 		System.out.println(name);
 		for(Map.Entry<Integer, String> entry: namesMap.entrySet()){
-			System.out.println(entry.getKey() + " " + entry.getValue());
+			System.out.println(entry.getKey() + " " + entry.getValue()); // print
 		}
 
 	}
