@@ -9,7 +9,7 @@ public class Main {
 
 	public static class Cake {
 		String cakeName; // instance variable
-		float price;  // instance variable
+		float price; // instance variable
 		String flavour; // instance variable
 		boolean isAvailable; // instance variable
 
