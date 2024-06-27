@@ -12,6 +12,6 @@ public class Main {
 		} catch (NullPointerException | ArithmeticException ex){
 			System.out.println(ex);
 		}
-		System.out.println("Program terminates");
+		System.out.println("Program terminates!");
 	}
 }
