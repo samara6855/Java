@@ -7,7 +7,7 @@ public class Main {
 		int x=sc.nextInt();
 		System.out.println("Enter second number: ");
 		int y=sc.nextInt();
-		int c = Sum(x,y);
+		int c = Sum(x,y); // Sum
 		System.out.println("The sum of give two integers is: "+c);
 	}
 	public static int Sum(int a,int b){
