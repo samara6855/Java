@@ -2,7 +2,7 @@
 class Solution {
 
     // Brute Force: Using 4 loops and calculate sum then check
-    // T.C: O(n^4), S.C: O(2*Quadruples)
+     // T.C: O(n^4), S.C: O(2*Quadruples)
     public static List<List<Integer>> fourSum(int[] nums, int target) {
         int n = nums.length; 
         Set<List<Integer>> set = new HashSet<>();
