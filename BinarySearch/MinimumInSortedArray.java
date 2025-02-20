@@ -4,7 +4,8 @@ class Solution {
 
     // Brute Force - Finding minimum using loop in the array - O(n)
 
-    // Optimal - Finding the sorted part and taking minimum, and then removing that part and check on the remaining part
+    // Optimal - Finding the sorted part and taking minimum
+    // And then removing that half and check on the remaining half for smaller element
     // O(logn)
     public int findMin(int[] nums) {
         int n = nums.length;
