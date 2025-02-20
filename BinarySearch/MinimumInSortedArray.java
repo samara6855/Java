@@ -31,6 +31,8 @@ class Solution {
         while(low<=high){
             int mid = (low+high)/2;
 
+            // This condition means that the search space is sorted
+            // So the nums[low] will be minimum and no need to search in that space
             if(nums[low]<=nums[high]){
                 ans = Math.min(ans,nums[low]);
                 break;
