@@ -1,6 +1,7 @@
 // https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/
 
 class Solution {
+    
     // Brute Force - O((maxi - mini+1)*n)
     public int minDays(int[] bloomDay, int m, int k) {
         if((m * k) > bloomDay.length) {return -1;}
