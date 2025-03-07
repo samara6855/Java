@@ -12,6 +12,7 @@ class Solution {
         }
         return -1;
     }
+    
     private boolean countDay(int[]arr, int day, int m, int k){
         int count = 0, noOfBouque = 0;
         for(int i=0; i<arr.length; i++){
@@ -49,6 +50,7 @@ class Solution {
         }
         return low;
     }
+    
     private boolean countDay(int[] arr, int day, int m, int k) {
     int n = arr.length; 
         int count = 0, noOfBouque = 0;
